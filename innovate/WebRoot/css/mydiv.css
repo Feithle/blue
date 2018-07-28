@@ -1,0 +1,28 @@
+.wrap{
+  	position: relative;
+  	width:10%;
+  	top: 50px;
+  	}
+  	.myul{
+  	padding :15px 0 0 0 ;
+  	margin:9;
+  	list-style: none;
+  	background: rgba(0,0,0,0.45);
+  	color: #ffffff;
+  	border-right-width:0;
+  	}
+  	.myli{
+  	display:block;
+  	height:30px;
+  	line-height:30px;
+  	padding-left:12px;
+  	cursor:pointer;
+  	font-size:14px;
+  	position: relative;
+  	}
+  	li.active{
+  	background:#999395;
+  	}
+  	li span:hover {
+  	color:#c81623;
+  	}
