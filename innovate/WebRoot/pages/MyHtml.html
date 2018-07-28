@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyHtml.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  <div id="chart" style="width:600px;height:300px;"></div>
+  <script type="text/javascript" src="../js/flotr2.min.js"></script>
+<script type="text/javascript"> 
+ 	var data=[
+ 	{data:[[0,22.4]],label:"电子信息"},
+ 	{data:[[0,77.6]],label:"新材料"},
+ 	{data:[[0,15]],label:"环境"},
+ 	{data:[[0,15]],label:"环境"},
+ 	{data:[[0,15]],label:"环境"},
+ 	{data:[[0,15]],label:"环境"},
+ 	{data:[[0,15]],label:"环境"},
+ 	{data:[[0,15]],label:"环境"},
+ 	//[[0,22.4]],label:"电子信息"[[1,77.6]]
+ 	];
+ 	window.onload=function (){
+ 	Flotr.draw(
+ 		document.getElementById("chart"),
+ 		data,//数据
+ 		{//配置
+			pie:{show:true},yaxis:{showLabels:false},	//y轴取消
+			xaxis:{showLabels:false},
+			grid:{
+				horizontalLines:false,
+				verticalLines:false
+			}
+ 		}
+ 	);
+ 	
+ 	};
+</script>
+  </body>
+</html>
